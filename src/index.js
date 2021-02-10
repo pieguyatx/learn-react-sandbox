@@ -18,9 +18,10 @@ const style1 = {
 //      --> a function or class that produces HTML (via JSX) and handles user feedback (event handlers)
 const App = () => {
     // after the return, this is JSX; converted to normal JS via babel (node module)
+    // JSX should use className instead of class to avoid conflict with JS 'class'
     return (
         <div>
-            <label class="label" for="name">Enter name:</label>
+            <label className="label" for="name">Enter name:</label> 
             <input id="name" type="text" />
             <button style={ style1 }>Submit</button>
         </div>
