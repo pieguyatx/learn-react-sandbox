@@ -8,7 +8,11 @@ import ReactDOM from 'react-dom';
 // require vs. import:  import for ES2015 modules, require is for CommonJS modules...
 
 // styles
-const style1 = { backgroundColor: 'green', color: 'white' };
+// in JSX (like in return) use "" for strings, but for non-JSX props, use '' by general convention
+const style1 = { 
+    backgroundColor: 'green', 
+    color: 'white' 
+};
 
 // Create a React component
 //      --> a function or class that produces HTML (via JSX) and handles user feedback (event handlers)
