@@ -22,7 +22,7 @@ const App = () => {
     // JSX should use className instead of class to avoid conflict with JS 'class'
     return (
         <div>
-            <label className="label" for="name">Enter name:</label> 
+            <label className="label" htmlFor="name">Enter name:</label> 
             <input id="name" type="text" />
             <button style={ style1 }>{ buttonText }</button>
         </div>
